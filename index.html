@@ -13,5 +13,46 @@
       crossorigin="anonymous"
     />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="container mt-5">
+        <form action="./result.php" method="GET" class="row">
+          <div class="paragraph" class="col-12">
+            <label for="paragraph" class="form-label">Paragrafo: </label>
+            <input
+              type="text"
+              id="paragraph"
+              name="paragraph"
+              class="form-control"
+              placeholder="scrivi un paragrafo di testo..."
+            />
+          </div>
+          <div class="bad-word" class="col-12">
+            <label for="bad-word" class="form-label mt-4"
+              >Parola da censurare:
+            </label>
+            <input
+              type="text"
+              id="bad-word"
+              name="bad-word"
+              class="form-control"
+              placeholder="Scrivi una parola da censurare..."
+            />
+          </div>
+          <div class="button col-12 mt-4">
+            <button class="btn btn-primary">Invia</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <style lang="scss"></style>
+    <script>
+      export default {
+        data() {
+          return {};
+        },
+      };
+    </script>
+  </body>
 </html>
