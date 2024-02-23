@@ -1,6 +1,6 @@
 <?php
 $user_paragraph = $_GET['paragraph'];
-$user_bad_word = $_GET['bad-word'];
+$user_bad_word = trim($_GET['bad-word']);
 
 $censured_paragraph = str_replace($user_bad_word, "***", $user_paragraph);
 ?>
